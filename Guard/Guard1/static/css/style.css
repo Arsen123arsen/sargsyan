@@ -1,0 +1,86 @@
+body {
+    margin-top: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    font-family: 'Roboto',Arial;
+    -webkit-font-smoothing: antialiased;
+}
+
+div {
+    display:block;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      `
+}
+
+
+.NAVdropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 24px;
+    cursor: inherit;
+    line-height: 24px;
+}
+
+.Container {
+    width: 975px;
+    margin: auto;
+}
+
+
+input[type="button"]{
+    background-color: #03508e;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: large;
+    -webkit-font-smoothing: antialiased;
+}
+
+.right {
+    float: right;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.NAVdropdownlabel {
+    display: inline-block;
+    text-align: center;
+    margin: 0 20px 10px 20px;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 24px;
+    cursor: inherit;
+    line-height: 24px;
+}
+
+
+

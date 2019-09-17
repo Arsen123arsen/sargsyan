@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
+</head>
+
+<style>
+
+.NAVdropdown{
+    position relative;
+    display: inline-block;
+}
+
+.NAVdropdownlabel {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px 10px 15p
+    ]
+    ,.x;
+}
+
+.NAVdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    z-index: 200000;
+}
+
+.dropdown-content{
+    background-color: #f1f1f1;
+    padding: 6px 29px 6px 29px;
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+}
+
+.NAVdropdown:hover  .NAVdropdown-content{
+    display: block;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 24px;
+    cursor: inherit;
+    line-height: 24px;
+}
+
+
+</style>
+
+<body>
+
+<div class="Container">
+    <a  href="/">
+        <img src ="{% static "guard1/Read.jpg" %}" style="border-style:None;max-height:100px;">
+    </a>
+
+    <div class="right text-right" style="margin-top: 10px;">
+        <input class="input" type="button" value="Login" style="vertical-align: middle;">
+    </div>
+
+   <div class="container" style="clear:both;color:#5c5c5c">
+            <div class="NAVdropdown">
+                <a href="/home.aspx" style="color:#5c5c5c">
+                    <label class="NAVdropdownlabel" style="cursor:pointer">
+                      Residents Area Home
+                    </label>
+                </a>
+            </div>
+        |
+        <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Order Parking Permit
+            </label>
+        </div>
+        |
+        <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Report An Issue
+            </label>
+
+            <div class="NAVdropdown-content">
+                <label class="dropdown-content">
+                   Security
+                </label>
+                <label class="dropdown-content">
+                    Parking
+                </label>
+            </div>
+
+
+
+        </div>
+       |
+         <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Parking Violation
+            </label>
+        </div>
+
+
+       <br>
+
+       <div style="width: 975px; margin-top: 15px;">
+           <table class="ContentPlaceHolder1_Table1">
+                <tr>
+                    <td class="HomePageMessage" style="color: #555;font-size: medium;">
+                            Welcome,
+                        <br>
+                        <br>
+                            Citiguard  – We Create Safe Communities. Citiguard Security is proud of its reputation and unsurpassed standards in customer service.
+                        <br>
+                        <br>
+                            Our goal is to partner with our clients to create a win for the client and the community.
+                        <br>
+                        <br>
+                            Our pro-active mindset and ability to be flexible has resulted in a blue chip client list that is the envy of security providers. Whether protecting our clients' brands, premises, assets or people, no one else delivers the Citiguard promise.
+                        <br>
+                        <br>
+                            Our officers are committed to providing a safe and secure environment for your employees, clients, tenants & vendors. We take special care in ensuring that you receive the right officer to fit your individual needs.
+                        <br>
+                        <br>
+                            We strive to always put “the right person in the right place at the right time”. Our officers receive training that far exceeds the State of California minimum requirements.
+                        <br>
+                        <br>
+                            Our officers are trained to proactively deter, observe and detect potential problems before they negatively affect your business or property.
+                        <br>
+                        <br>
+                            Our officers receive individualized post orders and on-site training tailored to your specific needs. Our officers are our greatest assets.  We invest in the training, safety, health and welfare of our professional staff of protective officers maintaining a consistent cadre of long-term employees to serve your needs.
+                        <br>
+                        <br>
+                            Officers are supported by a 24-hour fully staffed and equipped dedicated in-house dispatch center located at our Woodland Hills headquarters. Management & supervision are always on hand to address incidents and emergencies via the most advanced communication systems available.
+                        <br>
+                        <br>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #000;
+                                     text-align: center;
+                                     font-weight: bold;
+                                     font-size: x-large;
+                                    ">
+                            Citiguard, Inc.
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+
+                            9301 CORBIN AVE SUITE 1800
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            NORTHRIDGE, CA 91324
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            (800) 613-5903
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            info@mysecurityguards.com
+                        </span>
+                    </td>
+                </tr>
+           </table>
+
+           <br>
+           <img src="{% static "guard1/GreyRule.jpg" %}" alt="">
+
+           <div style="text-align: center">
+               <label style="font-size: x-small;">
+                 © Copyright
+                    <span>
+                        2019
+                    </span>
+                 Silvertrac Software, Inc.
+               </label>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+</body>
+</html>
