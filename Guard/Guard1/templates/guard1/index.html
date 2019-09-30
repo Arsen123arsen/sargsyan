@@ -19,9 +19,7 @@
 .NAVdropdownlabel {
     display: inline-block;
     text-align: center;
-    margin: 0 15px 10px 15p
-    ]
-    ,.x;
+    margin: 0 15px 10px 15px;
 }
 
 .NAVdropdown-content {
@@ -34,7 +32,8 @@
 
 .dropdown-content{
     background-color: #f1f1f1;
-    padding: 6px 29px 6px 29px;
+    padding: 6px 15px 6px 6px;
+    padding-left: 15px;
     white-space: nowrap;
     display: block;
     margin: 0;
@@ -48,10 +47,22 @@ label {
     display: inline-block;
     border-radius: 1px;
     margin: 2px;
-    min-height: 24px;
+    min-height: 25px;
     cursor: inherit;
-    line-height: 24px;
+    line-height: 22px;
 }
+
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+.dropdown-content:hover{
+    background: #03508e;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 
 </style>
@@ -68,18 +79,21 @@ label {
     </div>
 
    <div class="container" style="clear:both;color:#5c5c5c">
-            <div class="NAVdropdown">
-                <a href="/home.aspx" style="color:#5c5c5c">
-                    <label class="NAVdropdownlabel" style="cursor:pointer">
-                      Residents Area Home
-                    </label>
-                </a>
-            </div>
+        <div class="NAVdropdown">
+            <a href="/home.aspx" style="color:#5c5c5c">
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Residents Area Home
+                </label>
+            </a>
+        </div>
         |
         <div class="NAVdropdown">
-            <label class="NAVdropdownlabel" style="cursor:pointer">
-                Order Parking Permit
-            </label>
+            <a href="/arsen">
+
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Order Parking Permit
+                </label>
+            </a>
         </div>
         |
         <div class="NAVdropdown">
@@ -89,10 +103,19 @@ label {
 
             <div class="NAVdropdown-content">
                 <label class="dropdown-content">
-                   Security
+                    <a href="" >
+                        Security
+                    </a>
                 </label>
                 <label class="dropdown-content">
-                    Parking
+                    <a href="">
+                        Parking
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Maintenance
+                    </a>
                 </label>
             </div>
 
@@ -104,6 +127,25 @@ label {
             <label class="NAVdropdownlabel" style="cursor:pointer">
                 Parking Violation
             </label>
+
+            <div class="NAVdropdown-content">
+                <label class="dropdown-content">
+                    <a href="" >
+                        View
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Pay
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Appeal
+                    </a>
+                </label>
+            </div>
+
         </div>
 
 
