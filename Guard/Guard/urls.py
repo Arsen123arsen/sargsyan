@@ -23,5 +23,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', include('Guard1.urls')),
-    url(r'^home.aspx', include('Guard1.urls'))
+    url(r'^home.aspx', include('Guard1.urls')),
+    url(r'^index1', include('Guard1.urls')),
 ]
