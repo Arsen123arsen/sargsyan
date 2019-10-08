@@ -1,10 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
 </head>
+
+<style>
+
+.NAVdropdown{
+    position relative;
+    display: inline-block;
+}
+
+.NAVdropdownlabel {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px 10px 15px;
+}
+
+.NAVdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    z-index: 200000;
+}
+
+.dropdown-content{
+    background-color: #f1f1f1;
+    padding: 6px 15px 6px 6px;
+    padding-left: 15px;
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+}
+
+.NAVdropdown:hover  .NAVdropdown-content{
+    display: block;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 25px;
+    cursor: inherit;
+    line-height: 22px;
+}
+
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+.dropdown-content:hover{
+    background: #03508e;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+</style>
+
 <body>
+
+<div class="Container">
+    <a  href="/">
+        <img src ="{% static "guard1/Read.jpg" %}" style="border-style:None;max-height:100px;">
+    </a>
+
+    <div class="right text-right" style="margin-top: 10px;">
+        <input class="input" type="button" value="Login" style="vertical-align: middle;">
+    </div>
+
+   <div class="container" style="clear:both;color:#5c5c5c">
+        <div class="NAVdropdown">
+            <a href="/home.aspx" style="color:#5c5c5c">
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Residents Area Home
+                </label>
+            </a>
+        </div>
+        |
+        <div class="NAVdropdown">
+            <a href="/index1">
+
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Order Parking Permit
+                </label>
+            </a>
+        </div>
+        |
+        <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Report An Issue
+            </label>
+
+            <div class="NAVdropdown-content">
+                <label class="dropdown-content">
+                    <a href="" >
+                        Security
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Parking
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Maintenance
+                    </a>
+                </label>
+            </div>
+
+
+
+        </div>
+       |
+         <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Parking Violation
+            </label>
+
+            <div class="NAVdropdown-content">
+                <label class="dropdown-content">
+                    <a href="" >
+                        View
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Pay
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Appeal
+                    </a>
+                </label>
+            </div>
+
+        </div>
+
+
+       <br>
+
+
+                <tr>
+                    <td>
+                        <span style="color: #000;
+                                     text-align: center;
+                                     font-weight: bold;
+                                     font-size: x-large;
+                                    ">
+                            Citiguard, Inc.
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+
+                            9301 CORBIN AVE SUITE 1800
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            NORTHRIDGE, CA 91324
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            (800) 613-5903
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span style="color: #888;
+                                     text-align: center;
+                                     font-size: medium;
+                                    ">
+                            info@mysecurityguards.com
+                        </span>
+                    </td>
+                </tr>
+           </table>
+
+           <br>
+           <img src="{% static "guard1/GreyRule.jpg" %}" alt="">
+
+           <div style="text-align: center">
+               <label style="font-size: x-small;">
+                 © Copyright
+                    <span>
+                        2019
+                    </span>
+                 Citiguard Software
+               </label>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
 
 </body>
 </html>

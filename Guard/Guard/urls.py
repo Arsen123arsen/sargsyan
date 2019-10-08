@@ -18,11 +18,12 @@ from django.urls import path
 
 from django.conf.urls import url,include
 from django.contrib import admin
+from Guard1 import views
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('Guard1.urls')),
-    url(r'^home.aspx', include('Guard1.urls')),
-    url(r'^index1', include('Guard1.urls')),
+    url(r'^$', views.index),
+    url(r'^home.aspx', views.index2),
+    url(r'^index1', views.index1),
 ]
