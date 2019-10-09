@@ -1,0 +1,176 @@
+.DivHeaderLarge {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px 2px 0 0;
+    background: #f1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.DivBodyLarge {
+    margin: 0;
+    padding: 10px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #e6e6e6;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.WizardTitleButtonGreen {
+    color: #fff;
+    background: #008000;
+    background: -moz-linear-gradient(top,#70c960 0%,#46bf46 50%,#00a308 51%,#36d838 100%);
+    background: -ms-linear-gradient(top,#70c960 0%,#46bf46 50%,#00a308 51%,#36d838 100%);
+    background: -o-linear-gradient(top,#70c960 0%,#46bf46 50%,#00a308 51%,#36d838 100%);
+    background: -webkit-linear-gradient(top,#70c960 0%,#46bf46 50%,#00a308 51%,#36d838 100%);
+    width: 100%;
+    height: 36px;
+    border: solid 1px #acacac;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 36px;
+    margin-left:25px;
+}
+
+.WizardTitleButtonGray {
+    color: #fff;
+    background: #757575;
+    background: -moz-linear-gradient(top,#757575 0%,#c4c4c4 50%,#9b9b9b 51%,#d0d0d0 100%);
+    background: -ms-linear-gradient(top,#757575 0%,#c4c4c4 50%,#9b9b9b 51%,#d0d0d0 100%);
+    background: -o-linear-gradient(top,#757575 0%,#c4c4c4 50%,#9b9b9b 51%,#d0d0d0 100%);
+    background: -webkit-linear-gradient(top,#757575 0%,#c4c4c4 50%,#9b9b9b 51%,#d0d0d0 100%);
+    width: 100%;
+    height: 36px;
+    border: solid 1px #acacac;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 36px;
+    margin-left:25px;
+}
+
+.DivHeader {
+    margin-bottom: 0;
+    padding: 5px 10px 3px 10px;
+    border-top: 1px solid #cbcdcd;
+    border-right: 1px solid #abadad;
+    border-left: 1px solid #abadad;
+    border-bottom: 1px solid #808080;
+    border-radius: 7px 7px 0 0;
+    color: #000;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    background: -moz-linear-gradient(#f8f8f8,#989898);
+    background: -ms-linear-gradient(#f8f8f8,#989898);
+    background: -webkit-linear-gradient(#f8f8f8,#989898);
+}
+
+.DivBody {
+    margin: 0;
+    padding: 8px;
+    border-right: 1px solid #abadad;
+    border-left: 1px solid #abadad;
+    border-bottom: 1px solid #abadad;
+    background-color: #dadada;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+
+input[type=text] {
+    padding: 3px 6px 3px 6px;
+    border: solid 1px #aeadad;
+    border-radius: 1px;
+    white-space: nowrap;
+    height: 24px;
+    margin: 2px;
+    font-size: medium;
+    vertical-align: top;
+    color: #5c5c5c;
+    background-color: #ececec;
+}
+
+input {
+    color: #5c5c5c;
+    font-family: 'Roboto',Arial;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+.button{
+    background-color: #03508e;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: large;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button{
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
