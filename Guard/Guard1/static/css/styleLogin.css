@@ -1,0 +1,72 @@
+.DivHeaderLarge {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px 2px 0 0;
+    background: #f1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.DivBodyLarge {
+    margin: 0;
+    padding: 10px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #e6e6e6;
+}
+
+.label-horizontal {
+    padding-top: 4px;
+    text-align: right;
+}
+
+.right {
+    float: right;
+}
+
+input:-internal-autofill-selected {
+    background-color: rgb(232, 240, 254) !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+input[type="submit"] {
+    background-color: #03508e;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: large;
+}
+
+input {
+    color: #5c5c5c;
+    font-family: 'Roboto',Arial;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input[type=password] {
+    padding: 3px 6px 3px 6px;
+    border: solid 1px #aeadad;
+    border-radius: 1px;
+    white-space: nowrap;
+    height: 24px;
+    margin: 2px;
+    font-size: medium;
+    vertical-align: top;u
+    color: #5c5c5c;
+    background-color: #ececec;
+}
+
+.clear {
+    clear: both;
+}

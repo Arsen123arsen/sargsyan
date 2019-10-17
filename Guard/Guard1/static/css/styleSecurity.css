@@ -1,0 +1,72 @@
+.WizardSideBarStyle {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #03508e;
+    vertical-align: top;
+}
+
+.LabelMedium {
+    color: #000;
+    font-size: medium;
+}
+
+
+.WizardSideBarButtonStyle {
+    color: #fff;
+    text-decoration: none;
+    font-size: medium;
+    filter: none;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+.cr {
+    text-align: right;
+}
+
+.Textbox {
+    padding: 3px 6px 3px 6px;
+    border: solid 1px #aeadad;
+    border-radius: 1px;
+    white-space: nowrap;
+    height: 24px;
+    margin: 2px;
+    font-size: medium;
+    vertical-align: top;
+    color: #5c5c5c;
+    background-color: #ececec;
+}
+
+.Combobox {
+    margin: 2px;
+    padding: 3px 6px 3px 6px;
+    border: solid 1px #aeadad;
+    border-radius: 1px;
+    white-space: nowrap;
+    font-size: large;
+    color: #5c5c5c;
+    background-color: #ececec;
+}
+
+select {
+    height: 24px;
+    vertical-align: top;
+    font-family: 'Roboto',Arial;
+    font-size: medium;
+    margin: 2px;
+    color: #5c5c5c;
+    background-color: #ececec;
+    padding: 3px 6px 3px 6px;
+    box-sizing: content-box;
+}
+
+.WarningLabel {
+    padding: 2px;
+    color: #aa2626;
+    text-align: center;
+    font-size: medium;
+}

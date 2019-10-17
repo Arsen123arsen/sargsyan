@@ -26,7 +26,7 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    border: 1px solid #c0c0c0;
+    border: 1.5px solid #c0c0c0;
     z-index: 200000;
 }
 
@@ -45,7 +45,7 @@
 
 label {
     display: inline-block;
-    border-radius: 1px;
+    border-radius: 1.5px;
     margin: 2px;
     min-height: 25px;
     cursor: inherit;
@@ -75,7 +75,9 @@ a {
     </a>
 
     <div class="right text-right" style="margin-top: 10px;">
-        <input class="input" type="button" value="Login" style="vertical-align: middle;">
+        <a href="/Login.aspx">
+            <input class="input" type="button" value="Login" style="vertical-align: middle;">
+        </a>
     </div>
 
    <div class="container" style="clear:both;color:#5c5c5c">
@@ -88,7 +90,7 @@ a {
         </div>
         |
         <div class="NAVdropdown">
-            <a href="/index1">
+            <a href="/OrderPermit.aspx">
 
                 <label class="NAVdropdownlabel" style="cursor:pointer">
                     Order Parking Permit
@@ -101,22 +103,24 @@ a {
                 Report An Issue
             </label>
 
-            <div class="NAVdropdown-content">
-                <label class="dropdown-content">
-                    <a href="" >
-                        Security
+            <div class="NAVdropdown-content" style="margin-top: 0.5px;">
+                    <a href="/SecurityIssue.aspx" >
+                        <label class="dropdown-content">
+                            Security
+                        </label>
                     </a>
-                </label>
-                <label class="dropdown-content">
+
                     <a href="">
-                        Parking
+                        <label class="dropdown-content">
+                            Parking
+                        </label>
                     </a>
-                </label>
-                <label class="dropdown-content">
+
                     <a href="">
-                        Maintenance
+                        <label class="dropdown-content">
+                            Maintenance
+                        </label>
                     </a>
-                </label>
             </div>
 
 

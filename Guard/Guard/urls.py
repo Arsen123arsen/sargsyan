@@ -24,6 +24,8 @@ from Guard1 import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
+    url(r'^OrderPermit.aspx', views.index1),
     url(r'^home.aspx', views.index2),
-    url(r'^index1', views.index1),
+    url(r'^Login.aspx',views.index3),
+    url(r'^SecurityIssue.aspx',views.index4)
 ]

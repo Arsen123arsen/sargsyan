@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/style1.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/styleLogin.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/styleSecurity.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<style>
+
+.NAVdropdown{
+    position relative;
+    display: inline-block;
+}
+
+.NAVdropdownlabel {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px 10px 15px;
+}
+
+.NAVdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    z-index: 200000;
+}
+
+.dropdown-content{
+    background-color: #f1f1f1;
+    padding: 6px 15px 6px 6px;
+    padding-left: 15px;
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+}
+
+.NAVdropdown:hover  .NAVdropdown-content{
+    display: block;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 25px;
+    cursor: inherit;
+    line-height: 22px;
+}
+
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+.dropdown-content:hover{
+    background: #03508e;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type=text].Textbox {
+    padding: 3px 6px 3px 6px;
+    border: solid 1px #aeadad;
+    border-radius: 1px;
+    white-space: nowrap;
+    height: 24px;
+    margin: 2px;
+    font-size: medium;
+    vertical-align: top;
+    color: #5c5c5c;
+    background-color: #ececec;
+}
+
+
+</style>
+
+<body>
+
+<div class="Container">
+    <a  href="/">
+        <img src ="{% static 'guard1/Read.jpg' %}" style="border-style:None;max-height:100px;">
+    </a>
+
+    <div class="right text-right" style="margin-top: 10px;">
+        <a href="/Login.aspx">
+            <input class="input" type="button" value="Login" style="vertical-align: middle;">
+        </a>
+    </div>
+
+   <div class="container" style="clear:both;color:#5c5c5c">
+        <div class="NAVdropdown">
+            <a href="/home.aspx" style="color:#5c5c5c">
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Residents Area Home
+                </label>
+            </a>
+        </div>
+        |
+        <div class="NAVdropdown">
+            <a href="/OrderPermit.aspx">
+
+                <label class="NAVdropdownlabel" style="cursor:pointer">
+                    Order Parking Permit
+                </label>
+            </a>
+        </div>
+        |
+        <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Report An Issue
+            </label>
+
+            <div class="NAVdropdown-content" style="margin-top: 1px;">
+                    <a href="/SecurityIssue.aspx" >
+                        <label class="dropdown-content">
+                            Security
+                        </label>
+                    </a>
+
+                    <a href="">
+                        <label class="dropdown-content">
+                            Parking
+                        </label>
+                    </a>
+
+                    <a href="">
+                        <label class="dropdown-content">
+                            Maintenance
+                        </label>
+                    </a>
+            </div>
+
+
+
+        </div>
+       |
+         <div class="NAVdropdown">
+            <label class="NAVdropdownlabel" style="cursor:pointer">
+                Parking Violation
+            </label>
+
+            <div class="NAVdropdown-content">
+                <label class="dropdown-content" style="margin-top: 2px;">
+                    <a href="" >
+                        View
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Pay
+                    </a>
+                </label>
+                <label class="dropdown-content">
+                    <a href="">
+                        Appeal
+                    </a>
+                </label>
+            </div>
+
+        </div>
+
+
+
+        <div style="width: 975px; margin-top: 15px;">
+            <div style="width: 700px; margin: 0 auto;">
+                <div class="DivHeaderLarge">
+                    Report Security Issue
+                </div>
+
+                <div class="DivBodyLarge">
+                    <table class="LabelMedium" cellspacing="0" cellpadding="5" style="border-collapse:collapse;">
+                        <tbody>
+                           <tr>
+                               <td class="WizardSideBarStyle" style="height:100%;white-space:nowrap;">
+                                   <a href="">
+
+                                   </a>
+
+                                   <br>
+
+                                   <table cellspacing="0" style="border-collapse:collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="font-weight:bold;">
+                                                    <a href="" class="WizardSideBarButtonStyle">
+                                                        Step 1 - Your Location
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr >
+                                                <td style="padding-top: 3px;">
+                                                    <a href="" class="WizardSideBarButtonStyle">
+                                                        Step 2 - Contat Information
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                           <tr>
+                                                <td style="padding-top: 3px;">
+                                                    <a href="" class="WizardSideBarButtonStyle">
+                                                        Step 3 - Problem Information
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="padding-top: 3px;">
+                                                    <a href="" class="WizardSideBarButtonStyle">
+                                                        Step 4 - Confirmation
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                   </table>
+                               </td>
+
+                               <td style="height: 100%;">
+                                    <table cellspacing="0" cellpadding="0" style="height:100%;width:100%;border-collapse:collapse;">
+                                        <tbody>
+                                            <tr style="height: 100%;">
+                                                <td>
+                                                    <span>
+                                                        <table class="DefaultTable">
+                                                            <caption>
+                                                                <span>
+
+                                                                </span>
+                                                            </caption>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="cr">
+
+                                                                    </td>
+                                                                    <td>
+
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="cr">
+                                                                        <span class="FieldInputLabelsRight">
+                                                                             Property Name
+                                                                        </span>
+                                                                    </td>
+                                                                    <td>
+                                                                        <input type="text" class="Textbox">
+                                                                        <input type="submit" value="Find">
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="FieldInputLabelsLeft">
+                                                                            Please select a City to continue
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="cr">
+                                                                        Property
+                                                                    </td>
+                                                                    <td>
+                                                                        <select name="" id="" class="Combobox" style="width: 300px;">
+
+                                                                        </select>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="cr">
+                                                                        Address
+                                                                    </td>
+                                                                    <td>
+                                                                        <select class="Combobox" style="width: 300px;">
+
+                                                                        </select>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="cr">
+
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="WarningLabel" style="visibility:hidden;">
+
+                                                                        </span>
+                                                                        <span class="WarningLabel" style="visibility:hidden;">
+
+                                                                        </span>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>
+
+                                                                    </td>
+                                                                    <td>
+
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td colspan="2">
+                                                                        <div class="WarningLabel" style="display:none;">
+
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="right">
+                                                    <table cellspacing="5" cellpadding="5">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="right">
+                                                                    <input type="submit" value="Next">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                               </td>
+                           </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br>
+
+
+
+
+           <div style="text-align: center">
+               <label style="font-size: x-small;">
+                 © Copyright
+                    <span>
+                        2019
+                    </span>
+                 Citiguard Software
+               </label>
+           </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+</body>
+</html>

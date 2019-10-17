@@ -75,7 +75,7 @@ table {
 
 label {
     display: inline-block;
-    border-radius: 1px;
+    border-radius: 1.5px;
     margin: 2px;
     min-height: 24px;
     cursor: inherit;

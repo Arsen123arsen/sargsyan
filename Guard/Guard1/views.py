@@ -10,3 +10,9 @@ def index1(request):
 
 def index2(request):
     return render(request,'guard1/index.html')
+
+def index3(request):
+    return render(request,'guard1/login.html')
+
+def index4(request):
+    return render(request,'guard1/Security_Issue.html')
