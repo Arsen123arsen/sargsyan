@@ -9,6 +9,8 @@
     <link href="{% static 'css/style1.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/styleLogin.css' %}" rel="stylesheet" type="text/css" />
     <link href="{% static 'css/styleSecurity.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/styleMaintenanceIssue.css' %}" rel="stylesheet" type="text/css" />
+
 </head>
 
 <style>
@@ -190,7 +192,7 @@ input[type=text].Textbox {
                                             <tr>
                                                 <td style="font-weight:bold;">
                                                     <a href="" class="WizardSideBarButtonStyle">
-                                                        Step 1 - Your Location
+                                                        Step 1 - Agreement
                                                     </a>
                                                 </td>
                                             </tr>
@@ -198,7 +200,7 @@ input[type=text].Textbox {
                                             <tr >
                                                 <td style="padding-top: 3px;">
                                                     <a href="" class="WizardSideBarButtonStyle">
-                                                        Step 2 - Contat Information
+                                                        Step 2 - Your Location
                                                     </a>
                                                 </td>
                                             </tr>
@@ -206,7 +208,7 @@ input[type=text].Textbox {
                                            <tr>
                                                 <td style="padding-top: 3px;">
                                                     <a href="" class="WizardSideBarButtonStyle">
-                                                        Step 3 - Problem Information
+                                                        Step 3 - Contact info
                                                     </a>
                                                 </td>
                                             </tr>
@@ -214,7 +216,8 @@ input[type=text].Textbox {
                                             <tr>
                                                 <td style="padding-top: 3px;">
                                                     <a href="" class="WizardSideBarButtonStyle">
-                                                        Step 4 - Confirmation
+                                                        Step 4 - Maintenance Detail <br>
+                                                        Confirmation
                                                     </a>
                                                 </td>
                                             </tr>
@@ -227,102 +230,22 @@ input[type=text].Textbox {
                                         <tbody>
                                             <tr style="height: 100%;">
                                                 <td>
-                                                    <span>
-                                                        <table class="DefaultTable">
-                                                            <caption>
-                                                                <span>
+                                                    <div style="text-align: center;">
+                                                        <p class="WarningLabelLarge">
+                                                            When submitting a Maintenance request you MUST submit one (1) request for EACH request individually.
+                                                        </p>
 
-                                                                </span>
-                                                            </caption>
+                                                        <p>
+                                                            At the end of each request, you will be able to submit another
+                                                        </p>
+                                                    </div>
+                                                    <br>
+                                                    <span class="FieldInputLabelsLeft">
+                                                        <input type="checkbox">
+                                                        <label for="ContentPlaceHolder1_Wizard1_SCheckBox1">
+                                                            I agree with the statement listed above
+                                                        </label>
 
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="cr">
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td class="cr">
-                                                                        <span class="FieldInputLabelsRight">
-                                                                             Property Name
-                                                                        </span>
-                                                                    </td>
-                                                                    <td>
-                                                                        <input type="text" class="Textbox">
-                                                                        <input type="submit" value="Find">
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="FieldInputLabelsLeft">
-                                                                            Please select a City to continue
-                                                                        </span>
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td class="cr">
-                                                                        Property
-                                                                    </td>
-                                                                    <td>
-                                                                        <select name="" id="" class="Combobox" style="width: 300px;">
-
-                                                                        </select>
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td class="cr">
-                                                                        Address
-                                                                    </td>
-                                                                    <td>
-                                                                        <select class="Combobox" style="width: 300px;">
-
-                                                                        </select>
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td class="cr">
-
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="WarningLabel" style="visibility:hidden;">
-
-                                                                        </span>
-                                                                        <span class="WarningLabel" style="visibility:hidden;">
-
-                                                                        </span>
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td>
-
-                                                                    </td>
-                                                                    <td>
-
-                                                                    </td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <td colspan="2">
-                                                                        <div class="WarningLabel" style="display:none;">
-
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
                                                     </span>
                                                 </td>
                                             </tr>

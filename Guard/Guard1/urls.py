@@ -8,5 +8,7 @@ urlpatterns = [
     path('home.aspx',views.index2),
     path('Login.aspx',views.index3),
     path('SecurityIssue.aspx',views.index4),
+    path('ParkingIssue.aspx',views.index5),
+    path('MaintenanceIssue.aspx',views.index6),
 ]
 

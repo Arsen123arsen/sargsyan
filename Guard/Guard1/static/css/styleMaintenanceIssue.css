@@ -1,0 +1,70 @@
+.WarningLabelLarge {
+    padding: 2px;
+    color: #aa2626;
+    text-align: center;
+    font-size: large;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+}
+
+input {
+    color: #5c5c5c;
+    font-family: 'Roboto',Arial;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1px;
+    margin: 2px;
+    min-height: 24px;
+    cursor: inherit;
+    line-height: 24px;
+}
+
+input[type="submit" i] {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+input[type="submit"] {
+    background-color: #03508e;
+    color: #fff;
+    cursor: pointer;
+    margin: 2px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: large;
+}

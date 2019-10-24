@@ -27,5 +27,7 @@ urlpatterns = [
     url(r'^OrderPermit.aspx', views.index1),
     url(r'^home.aspx', views.index2),
     url(r'^Login.aspx',views.index3),
-    url(r'^SecurityIssue.aspx',views.index4)
+    url(r'^SecurityIssue.aspx',views.index4),
+    url(r'^ParkingIssue.aspx',views.index5),
+    url(r'^MaintenanceIssue.aspx',views.index6),
 ]

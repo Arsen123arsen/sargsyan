@@ -16,3 +16,9 @@ def index3(request):
 
 def index4(request):
     return render(request,'guard1/Security_Issue.html')
+
+def index5(request):
+    return render(request,'guard1/ParkingIssue.html')
+
+def index6(request):
+    return render(request,'guard1/MaintenanceIssue.html')
